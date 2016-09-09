@@ -1,0 +1,1 @@
+define("test",[],function(require,exports,module){var n={length:10,init:function(){console.log(this.length)}};module.exports=n});

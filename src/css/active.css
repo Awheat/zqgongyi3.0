@@ -1,0 +1,18 @@
+/*
+    发布活动
+*/
+.btn-radio{
+    position: relative;
+    display: table;
+    height: 40px;
+    line-height: 40px;
+    padding-left:23px;
+    margin-right: 20px;
+    float: left;
+    vertical-align: middle;
+}
+.btn-radio input{
+    position: absolute;
+    top: 11px;
+    left: 0;
+}

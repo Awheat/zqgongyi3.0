@@ -1,0 +1,1 @@
+define("setting_photo",["jquery","libs/jquery.Jcrop.min.js","utils/uploadjs"],function(require,exports,module){var $=require("jquery");require("libs/jquery.Jcrop.min.js");require("utils/uploadjs");$(function(){var n={formLoginPwd:$("#formLoginPwd"),formLoginPhone:$("#formLoginPhone"),init:function(){this.bindEvent()},bindEvent:function(){}};n.init()})});

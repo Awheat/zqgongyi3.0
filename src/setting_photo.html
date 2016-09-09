@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>中青公益-设置头像</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/ucenter.css">
+</head>
+<body>
+@import "header.html"
+<div class="gy-wraper setphoto-main">
+    <!-- ucenter-sidebar[ -->
+    <div class="ucenter-sidebar">
+        <h3 class="ucenter-title">活动管理</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li class="cur"><a href="my_notice.html">我发起的活动</a></li>
+                <li><a href="my_notice.html">我参与的活动</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">我的文章</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的文章</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">账户设置</h3>
+        <div class="ucenter-nav account-setting">
+            <ul>
+                <li><a href="my_info.html">我的资料</a></li>
+                <li><a href="setting_photo.html">头像设置</a></li>
+                <li><a href="account_safe.html">账户安全</a></li>
+                <li><a href="account_bind.html">社交账号绑定</a></li>
+                <li><a href="authentication.html">V认证</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">消息中心</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的通知</a></li>
+                <li><a href="my_letter.html">我的私信</a></li>
+            </ul>
+        </div>
+    </div><!-- ]ucenter-sidebar -->
+    <!-- ucenter-content[ -->
+    <div class="ucenter-content">
+        <h3 class="ucenter-title">账户设置/头像设置</h3>
+        <!-- 上传图像[ -->
+        <div class="block baseinfo">
+            <h3 class="ucenter-sub-title">基本信息</h3>
+            <div class="sub-block">
+                <form id="formUpload" method="post" enctype="multipart/form-data" action="../ajax/upload.php">
+                    <div class="upload">
+                        <div class="upload-btn">
+                            <label for="choiceimg">上传头像</label>
+                            <input type="file" name="choiceimg" id="choiceimg">
+                        </div>
+                        <span class="upload-tips">（支持jpg、jpeg和png格式，大小不超过1M）</span>
+                    </div>
+                </form>
+
+                <div class="review-photo" id="preview"><img src="../images/review.jpg"></div>
+                <button type="button" class="btn btn-default btn-save-upload">保存</button>
+            </div>
+        </div><!-- ]上传图像 -->
+    </div><!-- ]ucenter-content -->
+</div>
+@import "footer.html"
+</body>
+<script type="text/javascript" src="/src/js/libs/sea.js"></script>
+<script type="text/javascript" src="/src/js/common.js"></script>
+<script type="text/javascript">
+    seajs.use('setting_photo');
+</script>
+</html>

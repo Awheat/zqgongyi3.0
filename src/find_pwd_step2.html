@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>中青公益-找回密码</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/find_pwd.css"/>
+</head>
+<body>
+@import "header.html"
+<div class="gy-container find-pwd">
+    <h3 class="form-title">找回密码</h3>
+    <div class="find-pwd-step">
+        <i class="step-one cur">1</i>
+        <i class="step-two">2</i>
+        <i class="step-three">3</i>
+        <i class="step-four">4</i>
+        <span class="step-one-text cur">填写帐户名</span>
+        <span class="step-two-text">验证身份</span>
+        <span class="step-three-text">重置密码</span>
+        <span class="step-four-text">完成</span>
+    </div>
+    <div class="find-pwd-main">
+        <h3 class="find-pwd-title">正在为<span class="username">张三</span>找回账户密码,请使用以下方式进行验证:</h3>
+        <form action="#" method="post" id="formFindPwdTwo" class="form find-pwd-two">
+            <p>您正在使用  短信验证码  验证身份，请完成一下操作</p>
+            <p>验证手机：157＊＊＊＊8162</p>
+            <p class="form-item form-msgcode">
+                <label for="msgcode" class="label-item">验证码:</label>
+                <input type="text" id="msgcode" name="msgcode" placeholder="短信验证码">
+                <button type="button" class="btn btn-default btn-msg">获取短信验证码</button>
+            </p>
+            <p class="form-item"><button type="submit" class="btn btn-login">确定</button></p>
+        </form>
+    </div>
+</div>
+@import "footer.html"
+<script type="text/javascript" src="/src/js/libs/sea.js"></script>
+<script type="text/javascript" src="/src/js/common.js"></script>
+<script type="text/javascript">
+    seajs.use('find_pwd');
+</script>
+</body>
+</html>

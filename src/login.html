@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中青公益-登录</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body>
+@import "header.html"
+<div class="login-main">
+    <h3 class="form-title">手机登录</h3>
+    <form id="formLogin" class="form" data-url="../ajax/remote.html">
+        <span class="btn-com-login" data-id="0">普通登录</span>
+        <input type="hidden" id="logintype" name="logintype" value="1">
+        <div class="common-login hidden">
+            <p class="form-item">
+                <label for="usernameortel" class="label-item">账号</label>
+                <input type="text" id="usernameortel" name="usernameortel" placeholder="用户名/手机号">
+            </p>
+            <p class="form-item">
+                <label for="password" class="label-item">密码</label>
+                <input type="password" id="password" name="password" placeholder="密码">
+            </p>
+        </div>
+        <div class="message-login">
+            <p class="form-item">
+                <label for="telephone" class="label-item">手机号</label>
+                <input type="text" id="telephone" name="telephone" placeholder="手机号">
+            </p>
+            <p class="form-item form-msgcode">
+                <label for="msgcode" class="label-item">验证码</label>
+                <input type="text" id="msgcode" name="msgcode" data-url="test.html" class="msgcode" placeholder="验证码">
+                <button type="button" data-url="getMsgCodeByAjax.html" class="btn btn-default">获取短信验证码</button>
+            </p>
+        </div>
+        <p class="form-item form-forget"><input type="checkbox" checked="checked" id="remember" name="remember"><span>记住我</span><a href="#" class="forget">忘记密码</a></p>
+        <p class="form-item form-button"><button type="submit" class="btn btn-default btn-login">登录</button></p>
+    </form>
+    <div class="login-others">
+        <h3 class="login-others-title"><span>社交账号登录</span></h3>
+        <div class="login-others-ways clearfix">
+            <a href="#" class="wechat"></a>
+            <a href="#" class="qq"></a>
+            <a href="#" class="weibo"></a>
+        </div>
+        <p class="login-others-tips">还没有中青公益账号?<a href="#">马上注册</a></p>
+    </div>
+</div>
+@import "footer.html"
+</body>
+<script type="text/javascript" src="/src/js/libs/sea.js"></script>
+<script type="text/javascript" src="/src/js/common.js"></script>
+<script type="text/javascript">
+    seajs.use('login');
+</script>
+</html>

@@ -1,0 +1,168 @@
+.big-title{
+    color: #63935c;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.main{}
+.main .main-left{
+    width: 750px;
+    float: left;
+}
+.main .main-right{
+    width: 430px;
+    float: right;
+}
+.dynamic-list ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 2px solid #63935c;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+.dynamic-list h3{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.dynamic-list h3:after{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: block;
+    width: 5px;
+    height: 5px;
+    content: "";
+    border-radius: 100%;
+    background: #63935c;
+}
+.dynamic-list h3 a{
+    color: #63935c;
+    font-weight: bold;
+}
+.dynamic-list h3 a:hover{
+    color: #63935c;
+}
+.dynamic-list p{
+    height: 40px;
+    line-height: 20px;
+    padding: 7px 0;
+    color: #828483;
+    overflow: hidden;
+}
+.dynamic-list p a{
+    color: #63935c;
+}
+.dynamic-list .dynamic-info{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+.dynamic-list .user-photo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.dynamic-list .name-time{
+    color: #828483;
+}
+.dynamic-list .read-num,
+.dynamic-list .zan-num{
+    position: absolute;
+    top: 0;
+    display: block;
+    padding-left: 30px;
+    color: #828483;
+    cursor: pointer;
+}
+.dynamic-list .read-num{
+    right: 100px;
+    background: url(../images/icon-readings.png) no-repeat left center;
+}
+.dynamic-list .zan-num{
+    right: 0;
+    background: url(../images/icon-zans.png) no-repeat left center;
+}
+
+/* 块 */
+.block{
+    padding:10px 30px 20px 30px;
+    margin-bottom: 20px;
+    background: #ffffff;
+}
+.block-title{
+    color: #63935c;
+    font-size: 20px;
+    padding: 10px 0;
+    text-indent: 30px;
+    margin-bottom: 1px;
+    background: #ffffff;
+}
+.block-list li{
+    position: relative;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.block-list li:after{
+    position: absolute;
+    top: 18px;
+    left: 0;
+    display: block;
+    width: 5px;
+    height: 5px;
+    content: "";
+    border-radius: 100%;
+    background: #63935c;
+}
+.block-list li a{
+    display: inline-block;
+    max-width: 370px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #000000;
+}
+.block-list li a:hover{
+    color: #63935c;
+}
+.block-list li i{
+    display: block;
+    float: right;
+}
+/* 投稿 */
+.contribute{
+    padding: 30px;
+    background: #ffffff;
+}
+.contribute a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    color: #63935c;
+    font-size: 20px;
+    border-right: 1px solid #63935c;
+}
+.contribute span{
+    display: block;
+    width: 200px;
+    line-height: 20px;
+    float: left;
+    padding-left: 20px;
+}
+.contribute span i{
+    display: block;
+}

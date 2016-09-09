@@ -1,0 +1,182 @@
+.form-title {
+    color: #63935c;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px 0;
+}
+.find-pwd {
+    width: 815px;
+    margin: 100px auto;
+    padding: 0 100px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+.find-pwd-step {
+    position: relative;
+    width: 815px;
+    height: 95px;
+    background: url(../images/find-pwd-bg.png) no-repeat;
+}
+
+.find-pwd-step i,.find-pwd-step span {
+    position: absolute;
+    display: block;
+}
+
+.find-pwd-step i {
+    top: 4.5px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 100%
+}
+
+.find-pwd-step span {
+    top: 80px;
+    color: #828483;
+    font-size: 14px;
+}
+
+.find-pwd-step .step-one {
+    left: 77px;
+}
+
+.find-pwd-step .step-two {
+    left: 271.8px;
+}
+
+.find-pwd-step .step-three {
+    left: 464.8px;
+}
+
+.find-pwd-step .step-four {
+    left: 658.8px;
+}
+
+.find-pwd-step .step-one-text {
+    left: 78px;
+}
+
+.find-pwd-step .step-two-text {
+    left: 275px;
+}
+
+.find-pwd-step .step-three-text {
+    left: 470px;
+}
+
+.find-pwd-step .step-four-text {
+    left: 675px;
+}
+
+.find-pwd-step i.cur {
+    color: #63935c;
+    background: #fff;
+}
+
+.find-pwd-step span.cur {
+    color: #63935c;
+}
+
+.find-pwd-main {
+    padding: 50px 0 50px 56px;
+    box-sizing: border-box;
+}
+
+.find-pwd-main .find-pwd-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.find-pwd-main .find-pwd-title .username {
+    color: #63935c;
+    padding: 0 5px;
+}
+
+.find-pwd-main .success-tips {
+    text-align: center;
+    font-size: 24px;
+    padding: 50px 0 200px;
+}
+
+.find-pwd-one .label-name {
+    width: 50px;
+    text-align: left;
+}
+
+.find-pwd-one .vdimg {
+    display: block;
+    float: left;
+    margin-left: 80px;
+}
+
+.find-pwd-one .change {
+    display: block;
+    float: left;
+    margin-top: 15px;
+    margin-left: 30px;
+    color: #63935c;
+}
+
+.form-item .btn-next {
+    margin-left: 80px;
+    color: #fff;
+    background: #63935c;
+}
+
+.find-pwd-tips {
+    color: #828483;
+    margin-top: 60px;
+}
+
+.find-pwd-tips i {
+    padding: 0 20px;
+}
+
+.find-pwd-two {
+    padding: 20px 0 20px 130px;
+    border-radius: 10px;
+    background: #eee url(../images/icon-msg.png) no-repeat 35px 23px;
+}
+
+.find-pwd-two p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.find-pwd-two .label-name {
+    width: 50px;
+    text-align: left;
+}
+
+.find-pwd-two.form .form-item input {
+    width: 120px;
+    margin-right: 20px;
+    border: 1px solid #828483;
+}
+
+.find-pwd-two .btn-login {
+    color: #fff;
+    background: #63935c;
+}
+
+.find-pwd-three .btn.btn-next {
+    margin-left: 230px;
+}
+.find-pwd .form .form-item .label-item{
+    width: 80px;
+    text-align: left;
+    margin-right: 0;
+}
+.find-pwd .form .form-item.form-ckcode img,
+.find-pwd .form .form-item.form-button button.btn{
+    margin-left: 80px;
+}
+.find-pwd .find-pwd-three.form .form-item .label-item{
+    width: 200px;
+    text-align: right;
+    margin-right: 30px;
+}

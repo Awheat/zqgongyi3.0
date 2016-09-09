@@ -1,0 +1,24 @@
+{
+  "name": "zqgongyi",
+  "version": "1.0.0",
+  "description": "zqgongyi project started in 2016-08-15",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "date": "2016-08-15",
+  "author": "wuwc",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-html-import": "0.0.2",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-replace": "^0.5.4",
+    "gulp-seajs-concat": "^1.0.5",
+    "gulp-seajs-transport": "^0.4.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uglifycss": "^1.0.6",
+    "merge-stream": "^1.0.0"
+  }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>中青公益-我的资料</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/ucenter.css">
+</head>
+<body>
+@import "header.html"
+<div class="gy-wraper myinfo-main">
+    <!-- ucenter-sidebar[ -->
+    <div class="ucenter-sidebar">
+        <h3 class="ucenter-title">活动管理</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li class="cur"><a href="my_notice.html">我发起的活动</a></li>
+                <li><a href="my_notice.html">我参与的活动</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">我的文章</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的文章</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">账户设置</h3>
+        <div class="ucenter-nav account-setting">
+            <ul>
+                <li><a href="my_info.html">我的资料</a></li>
+                <li><a href="setting_photo.html">头像设置</a></li>
+                <li><a href="account_safe.html">账户安全</a></li>
+                <li><a href="account_bind.html">社交账号绑定</a></li>
+                <li><a href="authentication.html">V认证</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">消息中心</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的通知</a></li>
+                <li><a href="my_letter.html">我的私信</a></li>
+            </ul>
+        </div>
+    </div><!-- ]ucenter-sidebar -->
+    <!-- ucenter-content[ -->
+    <div class="ucenter-content">
+        <h3 class="ucenter-title">账户设置/我的资料</h3>
+        <!-- 基本信息块[ -->
+        <div class="block baseinfo">
+            <h3 class="ucenter-sub-title">基本信息 <i data-url="../ajax/get_base_info.html" class="icon-edit btn-edit-baseinfo btn-edit" data-type="0" data-parent="baseinfo"></i></h3>
+            <div class="sub-block baseinfo-show info-show">
+                <p class="list-item"><label class="item-props">昵称:</label><span class="item-value sw_name">张小凡</span></p>
+                <p class="list-item"><label class="item-props">性别:</label><span class="item-value sw_gender">女</span></p>
+                <p class="list-item"><label class="item-props">常驻地点:</label><span class="item-value sw_address">湖北省 随州市 广水市</span></p>
+                <p class="list-item"><label class="item-props">关注领域:</label><span class="item-value sw_sphere" data-id="1,2,3">支教助学 紧急救助 扶弱敬老</span></p>
+                <p class="list-item"><label class="item-props">擅长技能:</label><span class="item-value sw_skills">IT服务 英语 日语</span></p>
+            </div>
+        </div><!-- ]基本信息块 -->
+
+
+        <!-- 实名信息块[ -->
+        <div class="block realinfo">
+            <h3 class="ucenter-sub-title">实名信息 <i data-url="../ajax/get_real_info.html" class="icon-edit btn-edit-realinfo btn-edit" data-type="0" data-parent="realinfo"></i></h3>
+            <div class="sub-block realinfo-show info-show">
+                <p class="list-item"><label class="item-props">真实姓名:</label><span class="item-value sw_realname">张小凡</span></p>
+                <p class="list-item"><label class="item-props">证件类型:</label><span class="item-value sw_cardtype" data-id="1">护照</span></p>
+                <p class="list-item"><label class="item-props">证件号码:</label><span class="item-value sw_cardnum">2437123471092347082193</span></p>
+            </div>
+
+        </div><!-- ]实名信息块 -->
+
+
+        <!-- 基本信息块[ -->
+        <div class="block baseinfo">
+            <h3 class="ucenter-sub-title">基本信息 <i data-url="../ajax/get_base_info.html" class="icon-edit btn-edit-baseinfo btn-edit" data-type="0" data-parent="baseinfo"></i></h3>
+            <div class="sub-block baseinfo-show info-show">
+                <p class="list-item"><label class="item-props">名称:</label><span class="item-value sw_name">中国志愿者联合会</span></p>
+                <p class="list-item"><label class="item-props">所在地点:</label><span class="item-value sw_address">湖北省 随州市 广水市</span></p>
+                <p class="list-item"><label class="item-props">关注领域:</label><span class="item-value sw_sphere" data-id="1,2,3">支教助学 紧急救助 扶弱敬老</span></p>
+                <p class="list-item"><label class="item-props">官方网址:</label><span class="item-value sw_website">www.baidu.com</span></p>
+                <p class="list-item form-intrdu">
+                    <label class="item-props">简介:</label>
+                    <span class="item-value sw_intrdu">
+                        美丽中国是支教项目，但不只是支教项目：项目每年招募优秀青年人才，输送到我国教育资源匮乏地区从事
+                        两年一线教育教学工作。通过两年的长期支教，帮助当地学生和社区实现在教育上的突破性发展，同时也激发这
+                        批年轻人对教育事业的信念，培养他们成为有能力且长期致力于推动中国教育均衡化发展的未来人才。教育问题
+                        盘根错节，美丽中国致力于投入和培养有创造力的人才逐步解决教育相关的各个“关节”问题，实现“让所有中
+                        国孩子都能获得同等的优质教育”的愿景
+                    </span>
+                </p>
+            </div>
+
+            <div class="sub-block">
+                <form action="#" class="form">
+                    <p class="form-item">
+                        <label for="username" class="label-item"><i>*</i>组织名称:</label>
+                        <input type="text" id="username" name="username" class="item-input" placeholder="组织名称">
+                    </p>
+                    <p class="form-item">
+                        <label class="label-item"><i>*</i>常住地点:</label>
+                            <span class="distpicker">
+                                <select name="province"></select>
+                                <select name="city"></select>
+                                <select name="county"></select>
+                            </span>
+                    </p>
+                    <p class="form-item form-sphere" data-val="0,1,2">
+                        <label for="sphere" class="label-item"><i>*</i>关注领域:</label>
+                            <span class="list-sphere">
+                                <i data-id="0">社区服务</i>
+                                <i data-id="1">紧急援助</i>
+                                <i data-id="2">扶幼敬老</i>
+                                <i data-id="3">助残助困</i>
+                                <i data-id="4">海外服务</i>
+                                <i data-id="5">心愿梦想</i>
+                                <i data-id="6">人文关怀</i>
+                                <i data-id="7">环境保护</i>
+                                <i data-id="8">医疗救助</i>
+                                <i data-id="9">支教助学</i>
+                                <i data-id="10">其它</i>
+                            </span>
+                        <input type="hidden" id="sphere" name="sphere">
+                    </p>
+                    <p class="form-item">
+                        <label class="label-item">logo</label>
+                            <span class="btn-upload">
+                                <input type="file" name="uploadlogo">
+                            </span>
+                    </p>
+                    <p class="form-item">
+                        <label for="officsite" class="label-item">官方网站:</label>
+                        <input type="text" id="officsite" name="officsite" class="item-input" placeholder="官方网站">
+                    </p>
+                    <p class="form-item">
+                        <label for="introduct" class="label-item">简介:</label>
+                        <textarea name="introduct" id="introduct" placeholder="1-500字符"></textarea>
+                    </p>
+                </form>
+            </div>
+        </div><!-- ]基本信息块 -->
+
+
+        <!-- 实名信息块[ -->
+        <div class="block realinfo">
+            <h3 class="ucenter-sub-title">实名信息 <i data-url="../ajax/get_real_info.html" class="icon-edit btn-edit-realinfo btn-edit" data-type="0" data-parent="realinfo"></i></h3>
+            <div class="sub-block realinfo-show info-show">
+                <p class="list-item"><label class="item-props">姓名:</label><span class="item-value sw_realname">张小凡</span></p>
+                <p class="list-item"><label class="item-props">证件号码:</label><span class="item-value sw_cardnum">2437123471092347082193</span></p>
+                <p class="list-item"><label class="item-props">手机号码:</label><span class="item-value sw_telnum">13051038371</span></p>
+                <p class="list-item"><label class="item-props">邮箱:</label><span class="item-value sw_email">234234234@qq.com</span></p>
+            </div>
+
+            <div class="sub-block">
+                <form action="#" class="form">
+                    <p class="form-item">
+                        <label for="realname" class="label-item"><i>*</i>真实姓名:</label>
+                        <input type="text" id="realname" name="realname" class="item-input" placeholder="真实姓名">
+                    </p>
+                    <p class="form-item">
+                        <label for="cardtype" class="label-item"><i>*</i>证件类型:</label>
+                        <select name="cardtype" id="cardtype">
+                            <option value="0">身份证</option>
+                            <option value="1">护照</option>
+                        </select>
+                    </p>
+                    <p class="form-item">
+                        <label for="cardnumber" class="label-item"><i>*</i>证件号码:</label>
+                        <input type="text" id="cardnumber" name="cardnumber" class="item-input" placeholder="证件号码">
+                    </p>
+                    <p class="form-item">
+                        <label for="email" class="label-item">邮箱:</label>
+                        <input type="text" id="email" name="email" class="item-input" placeholder="邮箱">
+                    </p>
+                </form>
+            </div>
+        </div><!-- ]实名信息块 -->
+
+
+        <!-- 认证方式[ -->
+        <div class="block">
+            <h3 class="ucenter-sub-title">认证方式</h3>
+            <div class="sub-block">
+                <div class="social-way">
+                   <div class="way-left">
+                       <span class="icon"></span>
+                   </div>
+                   <div class="way-right">
+                       <p>新浪微博认证</p>
+                       <p>认证账号: <i>zhangsan</i></p>
+                   </div>
+                </div>
+
+                <div class="social-way">
+                    <div class="way-left">
+                        <span>材料认证</span>
+                    </div>
+                    <div class="way-right">
+                        <img src="../images/users.jpg" alt="">
+                        <img src="../images/users.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div><!-- ]认证方式 -->
+
+
+
+
+    </div><!-- ]ucenter-content -->
+</div>
+@import "footer.html"
+</body>
+<script type="text/javascript" src="/src/js/libs/sea.js"></script>
+<script type="text/javascript" src="/src/js/common.js"></script>
+<script type="text/javascript">
+    seajs.use('my_info');
+</script>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的私信</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/ucenter.css">
+</head>
+<body>
+@import "header.html"
+<div class="gy-wraper myletter-main">
+    <!-- ucenter-sidebar[ -->
+    <div class="ucenter-sidebar">
+        <h3 class="ucenter-title">活动管理</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li class="cur"><a href="my_notice.html">我发起的活动</a></li>
+                <li><a href="my_notice.html">我参与的活动</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">我的文章</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的文章</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">账户设置</h3>
+        <div class="ucenter-nav account-setting">
+            <ul>
+                <li><a href="my_info.html">我的资料</a></li>
+                <li><a href="setting_photo.html">头像设置</a></li>
+                <li><a href="account_safe.html">账户安全</a></li>
+                <li><a href="account_bind.html">社交账号绑定</a></li>
+                <li><a href="authentication.html">V认证</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">消息中心</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的通知</a></li>
+                <li><a href="my_letter.html">我的私信</a></li>
+            </ul>
+        </div>
+    </div><!-- ]ucenter-sidebar -->
+    <!-- ucenter-content[ -->
+    <div class="ucenter-content">
+        <h3 class="ucenter-title">账户设置/我的私信</h3>
+        <!-- 编辑私信 -->
+        <div class="letter-edit">
+            <form action="#" method="post">
+                <textarea name="letter" id="letter" placeholder="给我发私信吧~"></textarea>
+                <p class="tips">
+                    <span>最多可输入140个字符</span>
+                    <button class="btn-send">发送</button>
+                </p>
+            </form>
+        </div>
+        <!-- 私信列表 -->
+        <div class="block letter-list">
+            <h3 class="ucenter-sub-title">和 <i>张三</i>的私信(共3条)</h3>
+            <div class="sub-block">
+                <!-- 一条私信 -->
+                <div class="letters by-myself">
+                    <img src="../images/users.jpg" class="uphoto">
+                    <div class="letter-cont">
+                        <span>
+                            两只老虎，两只老虎，跑得快，跑得快，一只没有耳朵，一只没有尾巴，真奇怪！真
+                            奇怪！ 两只老虎，两只老虎，跑得快，跑得快  一只没有耳朵，一只没有尾巴，真奇
+                            怪！真奇怪！
+                        </span>
+                        <p>2016-04-12  12:22:22</p>
+                    </div>
+                </div>
+                <!-- 一条私信 -->
+                <div class="letters by-others">
+                    <img src="../images/users.jpg" class="uphoto">
+                    <div class="letter-cont">
+                        <span>真奇怪,真奇怪！</span>
+                        <p>2016-04-12  12:22:22</p>
+                    </div>
+                </div>
+                <!-- 一条私信 -->
+                <div class="letters by-myself">
+                    <img src="../images/users.jpg" class="uphoto">
+                    <div class="letter-cont">
+                        <span>
+                            两只老虎，两只老虎，跑得快，跑得快，一只没有耳朵，一只没有尾巴，真奇怪！真
+                            奇怪！ 两只老虎，两只老虎，跑得快，跑得快  一只没有耳朵，一只没有尾巴，真奇
+                            怪！真奇怪！
+                        </span>
+                        <p>2016-04-12  12:22:22</p>
+                    </div>
+                </div>
+                <!-- 一条私信 -->
+                <div class="letters by-others">
+                    <img src="../images/users.jpg" class="uphoto">
+                    <div class="letter-cont">
+                        <span>真奇怪,真奇怪！</span>
+                        <p>2016-04-12  12:22:22</p>
+                    </div>
+                </div>
+
+                <div class="info-paging">
+                    <a href="#" class="cur">11</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">></a>
+                    <a href="">>></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- ]ucenter-content -->
+</div>
+@import "footer.html"
+</body>
+<script type="text/javascript" src="/src/js/libs/sea.js"></script>
+<script type="text/javascript" src="/src/js/common.js"></script>
+<script type="text/javascript">
+    //seajs.use('ucenter');
+</script>
+</html>

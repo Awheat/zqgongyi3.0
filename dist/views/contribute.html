@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>中青公益-我的文章</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/ucenter.css">
+
+</head>
+<body>
+<!-- header[ -->
+<div id="header">
+    <div class="header-content">
+        <h1 class="header-logo"><a href="#"></a></h1>
+        <ul class="header-nav">
+            <li class="cur"><a href="#">首页</a></li>
+            <li><a href="#">公益资讯</a></li>
+            <li><a href="#">公益活动</a></li>
+        </ul>
+        <div class="login-regist hidden">
+            <a href="#" class="btn-login">登录</a>
+            <i>/</i>
+            <a href="#" class="btn-regist">注册</a>
+        </div>
+        <div class="header-menu">
+            <ul>
+                <li class="uname">
+                    <a href="#">张三</a>
+                    <div class="sub-menu">
+                        <a href="#">主页</a>
+                        <a href="#">设置</a>
+                        <a href="#">退出</a>
+                    </div>
+                </li>
+                <li class="uletter"><a href="#">私信</a></li>
+                <li class="unotice"><a href="#">通知<i>[10]</i></a></li>
+            </ul>
+        </div>
+    </div>
+</div><!-- ]header -->
+<div class="gy-wraper">
+    <!-- ucenter-sidebar[ -->
+    <div class="ucenter-sidebar">
+        <h3 class="ucenter-title">活动管理</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li class="cur"><a href="my_notice.html">我发起的活动</a></li>
+                <li><a href="my_notice.html">我参与的活动</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">我的文章</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的文章</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">账户设置</h3>
+        <div class="ucenter-nav account-setting">
+            <ul>
+                <li><a href="my_info.html">我的资料</a></li>
+                <li><a href="setting_photo.html">头像设置</a></li>
+                <li><a href="account_safe.html">账户安全</a></li>
+                <li><a href="account_bind.html">社交账号绑定</a></li>
+                <li><a href="authentication.html">V认证</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">消息中心</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的通知</a></li>
+                <li><a href="my_letter.html">我的私信</a></li>
+            </ul>
+        </div>
+    </div><!-- ]ucenter-sidebar -->
+    <!-- ucenter-content[ -->
+    <div class="ucenter-content">
+        <h3 class="ucenter-title">文章管理/投稿</h3>
+        <div class="contribute">
+            <form action="#" method="post" id="editArticleForm">
+                <input type="text" name="article_title" class="title" placeholder="请输入标题,5-50字符">
+                <div class="error"></div>
+                <textarea id="article_content" name="article_content" placeholder="请输入正文"></textarea>
+                <div class="error"></div>
+                <p class="contr-type clearfix">
+                    <label>投稿类型：</label>
+                    <span data-type="0">志愿文化</span>
+                    <span data-type="1">地方新闻</span>
+                    <span data-type="2">校园公益</span>
+                </p>
+                <input type="hidden" name="article_type">
+                <div class="error"></div>
+                <p class="contr-zqgy">
+                    <input type="checkbox" name="article_isfirst">
+                    <i>中青公益首发</i>
+                </p>
+                <p class="contr-yzcode">
+                    <input type="text" name="article_yzcode" placeholder="验证码">
+                    <span class="error"></span>
+                    <img src="../images/validation.jpg" alt="">
+                    <a href="#">看不清,换一张</a>
+                </p>
+                <p class="contr-btns clearfix">
+                    <button type="submit" class="save">保存草稿</button>
+                    <button type="button">提交审核</button>
+                </p>
+            </form>
+        </div>
+    </div><!-- ]ucenter-content -->
+</div>
+<!-- footer[ -->
+<div id="footer">
+    <h3>中青公益——国家志愿者公益服务支撑平台</h3>
+    <p>联系电话：010-64098678    公益合作：zqgy@zqgongyi.org     媒体合作：zqgymedia@zqgongyi.org </p>
+    <p>CopyRight©2012 - 2016  zqgongyi.org All Right Reserved     主管单位：中国青年报社     主办单位：中青华云    京ICP备13034192号</p>
+</div><!-- ]footer -->
+</body>
+<script type="text/javascript" src="/dist/js/libs/sea.js"></script>
+<script type="text/javascript" src="/dist/js/common.js"></script>
+<script type="text/javascript">
+    seajs.use('contribute');
+</script>
+</html>

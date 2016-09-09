@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中青公益-注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/regist.css">
+</head>
+<body>
+<!-- header[ -->
+<div id="header">
+    <div class="header-content">
+        <h1 class="header-logo"><a href="#"></a></h1>
+        <ul class="header-nav">
+            <li class="cur"><a href="#">首页</a></li>
+            <li><a href="#">公益资讯</a></li>
+            <li><a href="#">公益活动</a></li>
+        </ul>
+        <div class="login-regist hidden">
+            <a href="#" class="btn-login">登录</a>
+            <i>/</i>
+            <a href="#" class="btn-regist">注册</a>
+        </div>
+        <div class="header-menu">
+            <ul>
+                <li class="uname">
+                    <a href="#">张三</a>
+                    <div class="sub-menu">
+                        <a href="#">主页</a>
+                        <a href="#">设置</a>
+                        <a href="#">退出</a>
+                    </div>
+                </li>
+                <li class="uletter"><a href="#">私信</a></li>
+                <li class="unotice"><a href="#">通知<i>[10]</i></a></li>
+            </ul>
+        </div>
+    </div>
+</div><!-- ]header -->
+<!-- main[ -->
+<div class="regist-main">
+    <h3 class="form-title">用户注册</h3>
+    <form id="formRegist" class="form" data-url="../ajax/yzcode.html">
+        <p class="form-item">
+            <label for="telephone" class="label-item">手机号码</label>
+            <input type="text" id="telephone" name="telephone" placeholder="手机号码">
+        </p>
+        <p class="form-item form-msgcode">
+            <label for="msgcode" class="label-item">短信验证码</label>
+            <input type="text" id="msgcode" name="msgcode" data-url="" class="msgcode" placeholder="短信验证码">
+            <button type="button" data-url="../ajax/yzcode.html" class="btn btn-default">获取短信验证码</button>
+        </p>
+        <p class="form-item">
+            <label for="username" class="label-item">昵称</label>
+            <input type="text" id="username" data-url="../ajax/remote.html" name="username" placeholder="昵称">
+        </p>
+        <p class="form-item">
+            <label for="password" class="label-item">密码</label>
+            <input type="password" id="password" name="password" placeholder="密码">
+        </p>
+        <p class="form-item">
+            <label for="repassword" class="label-item">确认密码</label>
+            <input type="password" id="repassword" name="repassword" placeholder="确认密码">
+        </p>
+        <p class="form-item">
+            <label for="repassword" class="label-item">验证码</label>
+            <input type="text" id="vdcode" data-url="../ajax/remote.html" name="vdcode" placeholder="验证码">
+        </p>
+        <p class="form-item form-ckcode">
+            <img src="../images/validation.jpg" alt="验证码" class="vdimg"><a href="#" class="change">看不清,换一张</a>
+        </p>
+        <p class="form-item form-clause">
+            <input type="checkbox" checked="checked" id="isagree" name="isagree" class="is-agree">
+            <label for="isagree" class="to-reading">我以阅读并同意</label>
+            <a href="#" class="about-server">相关服务条款</a>
+        </p>
+        <p class="form-item form-button">
+            <button type="submit" class="btn btn-regist">注册</button><span class="go-login">已有账号,<a href="#">登录</a></span>
+        </p>
+    </form>
+</div><!-- ]main -->
+<!-- footer[ -->
+<div id="footer">
+    <h3>中青公益——国家志愿者公益服务支撑平台</h3>
+    <p>联系电话：010-64098678    公益合作：zqgy@zqgongyi.org     媒体合作：zqgymedia@zqgongyi.org </p>
+    <p>CopyRight©2012 - 2016  zqgongyi.org All Right Reserved     主管单位：中国青年报社     主办单位：中青华云    京ICP备13034192号</p>
+</div><!-- ]footer -->
+</body>
+<script type="text/javascript" src="/src/js/libs/sea.js"></script>
+<script type="text/javascript" src="/src/js/common.js"></script>
+<script type="text/javascript">
+    seajs.use('regist');
+</script>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>中青公益-我的文章</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/ucenter.css">
+
+</head>
+<body>
+@import "header.html"
+<div class="gy-wraper">
+    <!-- ucenter-sidebar[ -->
+    <div class="ucenter-sidebar">
+        <h3 class="ucenter-title">活动管理</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li class="cur"><a href="my_notice.html">我发起的活动</a></li>
+                <li><a href="my_notice.html">我参与的活动</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">我的文章</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的文章</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">账户设置</h3>
+        <div class="ucenter-nav account-setting">
+            <ul>
+                <li><a href="my_info.html">我的资料</a></li>
+                <li><a href="setting_photo.html">头像设置</a></li>
+                <li><a href="account_safe.html">账户安全</a></li>
+                <li><a href="account_bind.html">社交账号绑定</a></li>
+                <li><a href="authentication.html">V认证</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">消息中心</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的通知</a></li>
+                <li><a href="my_letter.html">我的私信</a></li>
+            </ul>
+        </div>
+    </div><!-- ]ucenter-sidebar -->
+    <!-- ucenter-content[ -->
+    <div class="ucenter-content">
+        <h3 class="ucenter-title">文章管理/投稿</h3>
+        <div class="contribute">
+            <form action="#" method="post" id="editArticleForm">
+                <input type="text" name="article_title" class="title" placeholder="请输入标题,5-50字符">
+                <div class="error"></div>
+                <textarea id="article_content" name="article_content" placeholder="请输入正文"></textarea>
+                <div class="error"></div>
+                <p class="contr-type clearfix">
+                    <label>投稿类型：</label>
+                    <span data-type="0">志愿文化</span>
+                    <span data-type="1">地方新闻</span>
+                    <span data-type="2">校园公益</span>
+                </p>
+                <input type="hidden" name="article_type">
+                <div class="error"></div>
+                <p class="contr-zqgy">
+                    <input type="checkbox" name="article_isfirst">
+                    <i>中青公益首发</i>
+                </p>
+                <p class="contr-yzcode">
+                    <input type="text" name="article_yzcode" placeholder="验证码">
+                    <span class="error"></span>
+                    <img src="../images/validation.jpg" alt="">
+                    <a href="#">看不清,换一张</a>
+                </p>
+                <p class="contr-btns clearfix">
+                    <button type="submit" class="save">保存草稿</button>
+                    <button type="button">提交审核</button>
+                </p>
+            </form>
+        </div>
+    </div><!-- ]ucenter-content -->
+</div>
+@import "footer.html"
+</body>
+<script type="text/javascript" src="/src/js/libs/sea.js"></script>
+<script type="text/javascript" src="/src/js/common.js"></script>
+<script type="text/javascript">
+    seajs.use('contribute');
+</script>
+</html>

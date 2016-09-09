@@ -1,0 +1,1 @@
+define("home",["jquery"],function(require,exports,module){var $=require("jquery"),t={init:function(){this.bindEvent()},bindEvent:function(){$(".info-intro").on("click","em",function(){var t=$(this),n=t.attr("data-status");0==n?t.attr("data-status",1).text("收起").parent().css("height","auto"):t.attr("data-status",0).text("展开").parent().css("height","50px")})}};t.init()});

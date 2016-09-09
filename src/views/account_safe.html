@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>中青公益-账户安全</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/ucenter.css">
+</head>
+<body>
+<!-- header[ -->
+<div id="header">
+    <div class="header-content">
+        <h1 class="header-logo"><a href="#"></a></h1>
+        <ul class="header-nav">
+            <li class="cur"><a href="#">首页</a></li>
+            <li><a href="#">公益资讯</a></li>
+            <li><a href="#">公益活动</a></li>
+        </ul>
+        <div class="login-regist hidden">
+            <a href="#" class="btn-login">登录</a>
+            <i>/</i>
+            <a href="#" class="btn-regist">注册</a>
+        </div>
+        <div class="header-menu">
+            <ul>
+                <li class="uname">
+                    <a href="#">张三</a>
+                    <div class="sub-menu">
+                        <a href="#">主页</a>
+                        <a href="#">设置</a>
+                        <a href="#">退出</a>
+                    </div>
+                </li>
+                <li class="uletter"><a href="#">私信</a></li>
+                <li class="unotice"><a href="#">通知<i>[10]</i></a></li>
+            </ul>
+        </div>
+    </div>
+</div><!-- ]header -->
+<div class="gy-wraper accountsafe-main">
+    <!-- ucenter-sidebar[ -->
+    <div class="ucenter-sidebar">
+        <h3 class="ucenter-title">活动管理</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li class="cur"><a href="my_notice.html">我发起的活动</a></li>
+                <li><a href="my_notice.html">我参与的活动</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">我的文章</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的文章</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">账户设置</h3>
+        <div class="ucenter-nav account-setting">
+            <ul>
+                <li><a href="my_info.html">我的资料</a></li>
+                <li><a href="setting_photo.html">头像设置</a></li>
+                <li><a href="account_safe.html">账户安全</a></li>
+                <li><a href="account_bind.html">社交账号绑定</a></li>
+                <li><a href="authentication.html">V认证</a></li>
+            </ul>
+        </div>
+        <h3 class="ucenter-title">消息中心</h3>
+        <div class="ucenter-nav message-center">
+            <ul>
+                <li><a href="my_notice.html">我的通知</a></li>
+                <li><a href="my_letter.html">我的私信</a></li>
+            </ul>
+        </div>
+    </div><!-- ]ucenter-sidebar -->
+    <!-- ucenter-content[ -->
+    <div class="ucenter-content">
+        <h3 class="ucenter-title">账户设置/账户安全</h3>
+
+        <div class="set-items set-pwd">
+            <div class="set-tips">
+                <span>已设置登录密码</span>
+            </div>
+            <a href="javascript:void(0);" class="btn-update-pwd">修改密码></a>
+        </div>
+        <div class="set-items set-tel">
+            <div class="set-tips">
+                <span>手机号码：158****5563 <i>[已验证]</i></span>
+                <span>验证手机号码可用于账户登录和密码找回，接收报名、时长等消息通知！</span>
+            </div>
+            <a href="javascript:void(0);" class="btn-update-tel">更换手机></a>
+        </div>
+
+
+        <div class="block login-pwd hidden">
+            <h3 class="ucenter-sub-title">登录密码</h3>
+            <form id="formLoginPwd" method="post" class="sub-block form">
+                <p class="form-item">
+                    <label for="curpwd" class="label-item">当前密码:</label>
+                    <input type="password" id="curpwd" name="curpwd" class="item-input" placeholder="当前密码">
+                </p>
+                <p class="form-item">
+                    <label for="newpwd" class="label-item">新密码:</label>
+                    <input type="password" id="newpwd" name="newpwd" class="item-input" placeholder="新密码">
+                </p>
+                <p class="form-item">
+                    <label for="repwd" class="label-item">确认密码:</label>
+                    <input type="password" id="repwd" name="repwd" class="item-input" placeholder="确认密码">
+                </p>
+                <p class="form-item form-button">
+                    <button type="submit" class="btn btn-default btn-save">保存</button>
+                </p>
+            </form>
+        </div>
+        <div class="block login-tel hidden">
+            <h3 class="ucenter-sub-title">手机验证</h3>
+            <form id="formLoginPhone" class="sub-block form">
+                <p class="form-item">
+                    <label class="label-item">当前手机号:</label>
+                    <span class="text">130455454545</span>
+                </p>
+                <p class="form-item">
+                    <label for="newphone" class="label-item">新手机号:</label>
+                    <input type="text" id="newphone" name="newphone" class="item-input" placeholder="新手机号">
+                </p>
+                <p class="form-item form-msgcode">
+                    <label for="msgcode" class="label-item">短信验证码</label>
+                    <input type="text" id="msgcode" name="msgcode" data-url="test.html" class="item-input msgcode" placeholder="短信验证码">
+                    <button type="button" data-url="" class="btn btn-default btn-msg">获取短信验证码</button>
+                </p>
+                <p class="form-item form-ckcode">
+                    <label for="vdcode" class="label-item">验证码</label>
+                    <input type="text" id="vdcode" name="vdcode" data-url="test.html" class="item-input" placeholder="验证码">
+                    <img src="../images/validation.jpg" alt="验证码" class="vdimg"><a href="#" class="change">看不清,换一张</a>
+                </p>
+                <p class="form-item form-button">
+                    <button type="submit" class="btn btn-default btn-save">保存</button>
+                </p>
+            </form>
+        </div>
+    </div><!-- ]ucenter-content -->
+</div>
+<!-- footer[ -->
+<div id="footer">
+    <h3>中青公益——国家志愿者公益服务支撑平台</h3>
+    <p>联系电话：010-64098678    公益合作：zqgy@zqgongyi.org     媒体合作：zqgymedia@zqgongyi.org </p>
+    <p>CopyRight©2012 - 2016  zqgongyi.org All Right Reserved     主管单位：中国青年报社     主办单位：中青华云    京ICP备13034192号</p>
+</div><!-- ]footer -->
+</body>
+<script type="text/javascript" src="/src/js/libs/sea.js"></script>
+<script type="text/javascript" src="/src/js/common.js"></script>
+<script type="text/javascript">
+    seajs.use('account_safe');
+</script>
+</html>

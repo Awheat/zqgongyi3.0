@@ -1,0 +1,91 @@
+/*  Login css
+==============================================================================*/
+.login-main{
+    width: 700px;
+    margin: 100px auto;
+    padding: 20px 0 80px 0;
+    border-radius: 10px;
+    background: #ffffff;
+}
+.login-main .form-title{
+    color: #63935c;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.login-main .btn-com-login{
+    display: inline-block;
+    margin-left: 430px;
+    margin-bottom: 10px;
+    color: #828483;
+    cursor: pointer;
+}
+.login-main .btn-com-login:hover{
+    color: #000000;
+}
+.login-main button.btn-login{
+    width: 260px;
+}
+/* Éç½»*/
+.login-others .login-others-title{
+    position: relative;
+    height: 30px;
+}
+.login-others .login-others-title:after{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    display: block;
+    content: "";
+    width: 240px;
+    height: 1px;
+    margin-left: -110px;
+    background: #63935c;
+}
+.login-others .login-others-title span{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 10;
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: -50px;
+    color: #63935c;
+    background: #ffffff;
+}
+.login-others .login-others-ways{
+    width: 240px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 242px;
+}
+.login-others .login-others-ways a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.login-others .login-others-ways a.wechat{
+    background: url(../images/shejiao.png) no-repeat;
+}
+.login-others .login-others-ways a.qq{
+    margin: 0 45px;
+    background: url(../images/shejiao.png) no-repeat;
+    background-position: -66px 0;
+}
+.login-others .login-others-ways a.weibo{
+    background: url(../images/shejiao.png) no-repeat;
+    background-position: -135px 0;
+}
+.login-others .login-others-tips{
+    text-align: center;
+    padding-top: 30px;
+    color: #828483;
+}
+.login-others .login-others-tips a{
+    color: #63935c;
+    margin-left: 5px;
+}
